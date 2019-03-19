@@ -1,0 +1,29 @@
+{
+    "name": "ksjogo/ksjogo-react-styled",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [
+        {
+            "name": "Johannes Goslar",
+            "role": "Developer"
+        }
+    ],
+    "version": "1.0.0",
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ksjogo\\KsjogoReactStyled\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ksjogo\\KsjogoReactStyled\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "ksjogo_react_styled": "self.version",
+        "typo3-ter/ksjogo-react-styled": "self.version"
+    }
+}
