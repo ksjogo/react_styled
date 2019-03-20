@@ -9,20 +9,18 @@ function PHPReact(string $filename)
     $oldDir = getcwd();
     chdir($dirPath);
     $command = "node ${indexPath} ${scriptPath}";
-    //echo $command;
 
     try {
         exec($command, $output);
     } catch (Exception $e) {
-        //echo $e;
+        return array($e, null);
     }
     chdir($oldDir);
-    return $output;
+    return array(null, join("\n", $output));
 }
 
 if (php_sapi_name() == "cli") {
     $output = PHPReact('./SSR/example.tsx');
-    foreach ($output as $line) {
-        echo "$line\n";
-    }
+    echo $output[0];
+    echo $output[1];
 }
