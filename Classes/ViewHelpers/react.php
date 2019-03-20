@@ -1,15 +1,13 @@
 <?php
 function PHPReact(string $filename)
 {
-    $basepath = realpath('../../' . __DIR__);
-    $dirPath = realpath($basepath . './');
-    $indexPath = realpath($basepath . './index.js');
-    $scriptPath = realpath($basepath . './' . $filename);
+    $basePath = realpath(__DIR__ . '/../../');
+    $indexPath = realpath($basePath . '/index.js');
+    $scriptPath = realpath($basePath . '/' . $filename);
 
     $oldDir = getcwd();
-    chdir($dirPath);
+    chdir($basePath);
     $command = "node ${indexPath} ${scriptPath}";
-
     try {
         exec($command, $output);
     } catch (Exception $e) {
