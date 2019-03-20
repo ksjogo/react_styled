@@ -12,6 +12,6 @@ class ReactViewHelper extends AbstractViewHelper
         \Closure $renderChildrenClosure,
         RenderingContextInterface $renderingContext
     ) {
-        return 'World';
+        return PHPReact('./SSR/example.tsx');
     }
 }
