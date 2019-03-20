@@ -1,5 +1,5 @@
 {
-    "name": "ksjogo/ksjogo-react-styled",
+    "name": "ksjogo/react-styled",
     "type": "typo3-cms-extension",
     "description": "",
     "authors": [
@@ -14,16 +14,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Ksjogo\\KsjogoReactStyled\\": "Classes"
+            "Ksjogo\\ReactStyled\\": "Classes"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Ksjogo\\KsjogoReactStyled\\Tests\\": "Tests"
+            "Ksjogo\\ReactStyled\\Tests\\": "Tests"
         }
     },
     "replace": {
-        "ksjogo_react_styled": "self.version",
-        "typo3-ter/ksjogo-react-styled": "self.version"
+        "react_styled": "self.version",
+        "typo3-ter/react-styled": "self.version"
     }
 }

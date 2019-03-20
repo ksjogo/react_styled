@@ -2,10 +2,7 @@
 defined('TYPO3_MODE') || die('Access denied.');
 
 call_user_func(
-    function()
-    {
-
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('ksjogo_react_styled', 'Configuration/TypoScript', 'react styled');
-
+    function () {
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('react_styled', 'Configuration/TypoScript', 'react styled');
     }
 );
